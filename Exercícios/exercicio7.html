@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nomeJ1 = prompt('Digite o seu nome, Jogador 1');
+        var nomeJ2 = prompt('Digite o seu nome, Jogador 2');
+
+        var numeroJ1 = parseFloat(prompt(nomeJ1 + " digite o seu número"));
+        var numeroJ2 = parseFloat(prompt(nomeJ2 + " digite o seu número"));
+
+        if(numeroJ1 == numeroJ2){
+            alert("Vocês empataram!!!");
+        }else{
+            var sorteio = Math.floor(Math.random() * 2);
+
+            if(sorteiro === 0 && numeroJ1 < numeroJ2 || sorteio === 1 && numeroJ1 > numeroJ2){
+                alert(nomeJ1 + " venceu!!!")
+            }else{
+                 alert(nomeJ2 + " venceu!!!");
+            }
+        }
+    </script>
+</body>
+</html>
